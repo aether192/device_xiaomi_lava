@@ -18,8 +18,8 @@
 TARGET_SCREEN_WIDTH := 1080
 TARGET_SCREEN_HEIGHT := 2340
 
-# Inherit from lava device makefile
-$(call inherit-product, device/xiaomi/lava/device.mk)
+# Inherit from lancelot device makefile
+$(call inherit-product, device/xiaomi/lancelot/device.mk)
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
@@ -36,8 +36,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/handheld_system_ext.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_system_ext.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := lava
-PRODUCT_NAME := lineage_lava
+PRODUCT_DEVICE := lancelot
+PRODUCT_NAME := lineage_lancelot
 PRODUCT_BRAND := Redmi
 PRODUCT_MANUFACTURER := xiaomi
 

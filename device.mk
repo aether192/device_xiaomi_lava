@@ -14,13 +14,13 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/xiaomi/lava
+DEVICE_PATH := device/xiaomi/lancelot
 
 # Inherit from mt6768-common
 $(call inherit-product, device/xiaomi/mt6768-common/mt6768-common.mk)
 
 # Get non-open-source specific aspects
-$(call inherit-product, vendor/xiaomi/lava/lava-vendor.mk)
+$(call inherit-product, vendor/xiaomi/lancelot/lancelot-vendor.mk)
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
